@@ -1,5 +1,5 @@
-import { products } from './data';
-import Product from './Product';
+import { products } from './data.js';
+import Product from './Product.js';
 
 class ProductList extends React.Component {
     render() {
