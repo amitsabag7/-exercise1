@@ -5,15 +5,11 @@ import './Product.css';
 export default class Product extends Component {
   render() {
   return (
-    <div>
-      <div>        
+    <div>        
         <div className='product-details'>
-          <div>
-            Product name:{this.props.name}
-          </div>
-            <p>price:{this.props.price}</p>
-          </div>
-      </div>
+          <p>Product name:{this.props.name}</p>
+          <p>price:{this.props.price}</p>
+        </div>
       <div className='product-image'>
         <img src={this.props.productImageUrl} alt="" />        
       </div>
