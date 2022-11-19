@@ -1,9 +1,10 @@
 import { products } from './data.js';
 import Product from './Product.js';
+import React from 'react';
 
-class ProductList extends React.Component {
-    render() {
-      const products = this.props.products;
+export default function ProductList() {
+    
+    const products = this.props.products;
       return products.map(product => (
         <Product
           name={product.name}
@@ -11,6 +12,6 @@ class ProductList extends React.Component {
           productImageUrl={product.productImageUrl}
         />
       ));
-    }
-  }
+    
+}
   
