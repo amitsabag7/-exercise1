@@ -1,7 +1,9 @@
 import React from 'react';
 import './Product.css';
+ import { Component } from 'react';
 
-export default function Product() {
+export default class Product extends Component {
+  render() {
   return (
     <div>
       <div>        
@@ -13,8 +15,9 @@ export default function Product() {
           </div>
       </div>
       <div className='product-image'>
-        <img src={this.props.productImageUrl} />        
+        <img src={this.props.productImageUrl} alt="" />        
       </div>
     </div>
   );
+  }
 }
