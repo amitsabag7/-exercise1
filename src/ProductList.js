@@ -1,3 +1,6 @@
+import { products } from './data';
+import Product from './Product';
+
 class ProductList extends React.Component {
     render() {
       const products = this.props.products;
